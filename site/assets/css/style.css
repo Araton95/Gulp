@@ -1,0 +1,355 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url('../fonts/Circe-Bold/Circe-Bold.eot');
+  src: url('../fonts/Circe-Bold/Circe-Bold.eot') format('embedded-opentype'), url('../fonts/Circe-Bold/Circe-Bold.woff') format('woff'), url('../fonts/Circe-Bold/Circe-Bold.ttf') format('truetype'), url('../fonts/Circe-Bold/Circe-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe-Regular';
+  src: url('../fonts/Circe-Regular/Circe-Regular.eot');
+  src: url('../fonts/Circe-Regular/Circe-Regular.eot') format('embedded-opentype'), url('../fonts/Circe-Regular/Circe-Regular.woff') format('woff'), url('../fonts/Circe-Regular/Circe-Regular.ttf') format('truetype'), url('../fonts/Circe-Regular/Circe-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller-Bold';
+  src: url('../fonts/Muller-Bold/Muller-Bold.eot');
+  src: url('../fonts/Muller-Bold/Muller-Bold.eot') format('embedded-opentype'), url('../fonts/Muller-Bold/Muller-Bold.woff') format('woff'), url('../fonts/Muller-Bold/Muller-Bold.ttf') format('truetype'), url('../fonts/Muller-Bold/Muller-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons/icomoon.eot');
+  src: url('../fonts/icons/icomoon.eot') format('embedded-opentype'), url('../fonts/icons/icomoon.woff') format('woff'), url('../fonts/icons/icomoon.ttf') format('truetype'), url('../fonts/icons/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url('../fonts/Circe-Bold/Circe-Bold.eot');
+  src: url('../fonts/Circe-Bold/Circe-Bold.eot') format('embedded-opentype'), url('../fonts/Circe-Bold/Circe-Bold.woff') format('woff'), url('../fonts/Circe-Bold/Circe-Bold.ttf') format('truetype'), url('../fonts/Circe-Bold/Circe-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe-Regular';
+  src: url('../fonts/Circe-Regular/Circe-Regular.eot');
+  src: url('../fonts/Circe-Regular/Circe-Regular.eot') format('embedded-opentype'), url('../fonts/Circe-Regular/Circe-Regular.woff') format('woff'), url('../fonts/Circe-Regular/Circe-Regular.ttf') format('truetype'), url('../fonts/Circe-Regular/Circe-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller-Bold';
+  src: url('../fonts/Muller-Bold/Muller-Bold.eot');
+  src: url('../fonts/Muller-Bold/Muller-Bold.eot') format('embedded-opentype'), url('../fonts/Muller-Bold/Muller-Bold.woff') format('woff'), url('../fonts/Muller-Bold/Muller-Bold.ttf') format('truetype'), url('../fonts/Muller-Bold/Muller-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons/icomoon.eot');
+  src: url('../fonts/icons/icomoon.eot') format('embedded-opentype'), url('../fonts/icons/icomoon.woff') format('woff'), url('../fonts/icons/icomoon.ttf') format('truetype'), url('../fonts/icons/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (max-width: 1220px) {
+  .wrapper .inner {
+    width: 980px;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.transition {
+  transition: all 300ms;
+}
+.border-radius {
+  border-radius: 4px;
+}
+.wrapper .inner {
+  width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.wrapper .header .inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 24px;
+}
+.wrapper .header .inner .menu a {
+  font-family: Muller-Bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 40px 0 0;
+  color: #000;
+  text-decoration: none;
+}
+.wrapper .header .inner .menu a:last-child {
+  padding: 0;
+}
+.wrapper .main {
+  background: #041824 url(../images/bg.png) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 113px);
+}
+.wrapper .main .inner .welcome-text {
+  padding: 70px 0 55px;
+  text-align: center;
+}
+.wrapper .main .inner .welcome-text div {
+  font-family: Circe-Bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+}
+.wrapper .main .inner .welcome-text p {
+  font-family: Circe-Regular;
+  font-size: 30px;
+  line-height: 45px;
+  color: #fff;
+}
+.wrapper .main .search {
+  background-color: rgba(4, 24, 36, 0.41);
+}
+.wrapper .main .search .inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 95px;
+}
+.wrapper .main .search .inner .form-item {
+  background-color: white;
+  padding: 10px;
+  font-family: Circe-Bold;
+  font-size: 15px;
+}
+.wrapper .main .search .inner .submit {
+  border-radius: 4px;
+  transition: all 300ms;
+  background-color: #00d88e;
+  font-family: Circe-Bold;
+  color: white;
+  font-size: 11px;
+  line-height: 12px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  width: 120px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.wrapper .main .search .inner .submit:hover {
+  background-color: #00bb7c;
+}
+.wrapper .main .search .inner .calendar {
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+.wrapper .main .search .inner .calendar .check-in {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 165px;
+  margin-right: 1px;
+  border-radius: 4px 0 0 4px;
+}
+.wrapper .main .search .inner .calendar .check-in .icon-enter:before {
+  content: "\ea13";
+  font-family: icons;
+  font-size: 32px;
+  color: #afafaf;
+  padding: 10px 15px 10px 0;
+}
+.wrapper .main .search .inner .calendar .check-out {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 165px;
+  border-radius: 0 4px 4px 0;
+}
+.wrapper .main .search .inner .calendar .check-out .icon-exit:before {
+  content: "\ea14";
+  font-family: icons;
+  font-size: 32px;
+  color: #afafaf;
+  padding: 10px 15px 10px 0;
+}
+.wrapper .main .search .inner .info {
+  border-radius: 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 30px;
+  width: 350px;
+}
+.wrapper .main .search .inner .info .icon-user:before {
+  font-family: icons;
+  content: "\e900";
+  font-size: 32px;
+  color: #afafaf;
+  padding: 10px 15px 10px 0;
+}
+.wrapper .main .search .inner .weekdays {
+  font-family: Circe-Regular;
+  color: #989898;
+}
+.wrapper .main .search .inner .form-control {
+  font: 14px/16px Circe-Bold;
+  border: none;
+  width: 100%;
+}
+
+@media screen and (max-width: 1220px) {
+  .wrapper .inner {
+    width: 980px;
+  }
+}

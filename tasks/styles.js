@@ -7,6 +7,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var csso = require('gulp-csso');
 var gulpif = require('gulp-if');
+var livereload = require('gulp-livereload');
 
 var production = require('../gulpfile');
 
@@ -30,5 +31,6 @@ gulp.task('styles', function () {
 		.pipe(remember('styles'))
 		.pipe(concat('style.css'))
 		.pipe(gulpif(production, csso()))
-		.pipe(gulp.dest('site/assets/css/'));
+		.pipe(gulp.dest('site/assets/css/'))
+		.pipe(livereload());
 });
