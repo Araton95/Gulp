@@ -6,6 +6,8 @@ Gulp.js это потоковый сборщик проектов на JS.
     npm install
 
 ## Работа
+- `npm install` - install node_modules
+- `npm -g install gulp` -  install gulp
 - `gulp` - запускает сначала `clean`, а затем `build`.
 - `gulp clean` - очищает директорию assets.
 - `gulp build` - собирает проект.
